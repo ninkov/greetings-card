@@ -1,8 +1,6 @@
-
-
 export default function CardView({photo,text,setText}) {
   return (
-    <div className="card">
+    <div id="card" className="card">
 
 {photo&&(
     <div className="frame">
