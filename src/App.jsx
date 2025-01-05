@@ -4,6 +4,7 @@ import "./App.css";
 import PhotoUpload from "./components/PhotoUpload";
 import CardView from "./components/CardView";
 import ExportButton from "./components/ExportButton";
+import BackgroundChanger from "./components/BackgroundChanger";
 
 function App() {
   const [photo, setPhoto] = useState(null);
@@ -16,12 +17,13 @@ function App() {
   Моля, потвърди присъствието си до [дата за потвърждение].
   С най-добри пожелания,
   [Твоето име]`);
-
+const [background, setBackground]=useState('src/assets/BDAI.webp')
   return (
     <>
       <PhotoUpload setPhoto={setPhoto} />
-      <CardView text={text} setText={setText} photo={photo} />
+      <CardView photo={photo} text={text} setText={setText} background={background} />
       <ExportButton photo={photo} text={text} />
+      <BackgroundChanger setBackground={setBackground}/>
     </>
   );
 }
