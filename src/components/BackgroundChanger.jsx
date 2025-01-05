@@ -30,7 +30,18 @@ export default function BackgroundChanger({ setBackground }) {
         >
           Marvel
         </button>
-
+        <button onClick={() => changeBackground(customUrl)} className="bg-button custom-bg-button">
+            Apply Custom Background
+          </button>
+        <div>
+          <input
+            type="text"
+            placeholder="Enter custom URL"
+            value={customUrl}
+            onChange={(e) => setCustomUrl(e.target.value)}
+            className="bg-input"
+          />
+        </div>
     </div>
   );
 }
