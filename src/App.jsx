@@ -5,7 +5,7 @@ import PhotoUpload from "./components/PhotoUpload";
 import CardView from "./components/CardView";
 import ExportButton from "./components/ExportButton";
 import BackgroundChanger from "./components/BackgroundChanger";
-
+import defWall from './assets/BDAI.webp';
 function App() {
   const [photo, setPhoto] = useState(null);
   const [text, setText] = useState(`Скъпи [име на госта],
@@ -17,7 +17,7 @@ function App() {
   Моля, потвърди присъствието си до [дата за потвърждение].
   С най-добри пожелания,
   [Твоето име]`);
-const [background, setBackground]=useState('src/assets/BDAI.webp')
+const [background, setBackground]=useState(defWall)
   return (
     <>
       <PhotoUpload setPhoto={setPhoto} />

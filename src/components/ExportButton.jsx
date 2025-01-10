@@ -6,9 +6,9 @@ export default function ExportButton({ photo, text }) {
     const node = document.getElementById("card");
     toPng(node)
       .then((dataUrl) => {
-        download(dataUrl, "greeting-card.png");
+        download(dataUrl, "invitation-card.png");
       })
-      .then((error) => {
+      .catch((error) => {
         console.log("Error exporting the cad", error);
       });
   };
