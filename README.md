@@ -1,7 +1,7 @@
 
-# Simple greeting card for birthday with text template for information where and when.
+# Simple invitation card for birthday with text template for information where and when.
 
-## The basic greeting card generator app has been set up. Follow these steps in order:
+## Follow these steps in order:
 
    
 1. Clone repo: https://github.com/ninkov/greetings-card.git
@@ -10,3 +10,4 @@
 
 3. Run the application locally using "npm run dev".
    
+4. You can try app here: https://ninkov.github.io/invitation-card/
